@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Tests]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="TicketSwap.SampleTest.ExtentReporter"/>
+    <listener class-name="TicketSwap.SampleTest.TakeScreenshot"/>
+  </listeners>
+  <test thread-count="1" name="TicketSwap(failed)">
+    <classes>
+      <class name="TicketSwap.SampleTest.NewTest">
+        <methods>
+          <include name="sellTicket"/>
+          <include name="launchApp"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TicketSwap.SampleTest.NewTest -->
+    </classes>
+  </test> <!-- TicketSwap(failed) -->
+</suite> <!-- Failed suite [Tests] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests" thread-count="1" preserve-order="true">
+	
+	<listeners>
+	<listener class-name="TicketSwap.SampleTest.ExtentReporter" />
+	<listener class-name="TicketSwap.SampleTest.TakeScreenshot" />
+	</listeners>
+	
+	<test name="TicketSwap"> 
+		<classes>
+			<class name="TicketSwap.SampleTest.NewTest">
+				<methods>
+					<include name="sellTicket"/>
+					<include name="loginAtTimeOfSellTickets"/>
+					<include name= "searchKeyword"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>	
